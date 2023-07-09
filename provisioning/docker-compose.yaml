@@ -19,13 +19,13 @@ services:
   zap:
     image: owasp/zap2docker-stable
     container_name: zap
-    command: zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true
+    command: zap.sh -daemon -host 0.0.0.0 -port 8085 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true
     networks:
       - cicd
     expose:
       - 8085
     ports:
-      - '8085:8080'
+      - '8085:8085'
 
   sonarqube:
     image: sonarqube:8.6-community
