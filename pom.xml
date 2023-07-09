@@ -7,8 +7,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <!-- <version>2.3.4.RELEASE</version> -->
         <!-- <version>3.1.1</version> -->
-        <version>3.0.0</version>
-        <!-- <version>2.7.13</version> -->
+        <version>2.7.13</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>nl.amis.smeetsm</groupId>
@@ -45,18 +44,15 @@
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--fa 
-            <dependency>
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
-        </dependency> -->
+        </dependency>
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-java</artifactId>
-            <!-- fa
-            <version>6.31.0</version> -->
-            <version>6.55.0</version>
+            <version>6.31.0</version>
         </dependency>
     </dependencies>
 
@@ -69,18 +65,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <!-- fa
-                <version>2.22.2</version> -->
-                <version>3.1.2</version>
+                <version>2.22.2</version>
             </plugin>
             <!-- checks dependencies for vulnerabilities -->
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <!-- fa
-                <version>6.1.1</version> -->
-                <version>8.3.1</version>
-
+                <version>6.1.1</version>
                 <executions>
                     <execution>
                         <goals>
@@ -101,9 +92,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <!-- fa
-                    <version>0.8.6</version> -->
-                <version>0.8.10</version>
+                <version>0.8.6</version>
                 <executions>
                     <execution>
                         <goals>
@@ -153,9 +142,7 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <!-- fa
-                <version>4.2.0</version> -->
-                <version>4.7.3.5</version>
+                <version>4.2.0</version>
                 <configuration>
                     <effort>Max</effort>
                     <threshold>Low</threshold>
@@ -168,9 +155,7 @@
                             <artifactId>findsecbugs-plugin</artifactId>
                             <!-- <version>LATEST</version>  -->
                             <!-- Auto-update to the latest stable -->
-                            <!-- fa
-                            <version>1.2.0</version> -->
-                            <version>1.12.0</version>
+                            <version>1.2.0</version>
                         </plugin>
                     </plugins>
                 </configuration>
@@ -186,9 +171,7 @@
                     <dependency>
                         <groupId>com.github.spotbugs</groupId>
                         <artifactId>spotbugs</artifactId>
-                        <!-- fa
-                         <version>4.2.1</version> -->
-                         <version>4.7.3</version>
+                        <version>4.2.1</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -196,9 +179,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <!-- fa
-                <version>3.14.0</version> -->
-                <version>3.21.0</version>
+                <version>3.14.0</version>
                 <configuration>
                     <failOnViolation>true</failOnViolation>
                     <failurePriority>1</failurePriority>
@@ -227,9 +208,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <!-- fa hasta aqui 
-                <version>3.9.1</version> -->
-                <version>4.0.0-M8</version>
+                <version>3.9.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
