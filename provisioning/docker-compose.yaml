@@ -23,7 +23,7 @@ services:
     networks:
       - cicd
     expose:
-      - 8080
+      - 8085
     ports:
       - '8085:8080'
 
@@ -50,7 +50,9 @@ services:
     networks:
       - cicd
     expose:
-      - 8080
+      - 8087
+    ports:
+      - '8087:8080'
 
 networks:
   cicd:
